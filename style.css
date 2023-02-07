@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(177, 240, 158);
+}
+
+.container{
+    background-color: #fff;
+    width: 80%;
+    max-width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+.container .question{
+    background-color: #ccc;
+    height: 80px;
+    padding: 1.5rem;
+    font-size: 35px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border: none;
+    background-color: #ccc;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(152, 239, 126);
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus{
+    border-bottom:2px solid rgb(255, 98, 0);
+    outline: none;
+}
+
+.container .submit-btn{
+    background-color: aqua;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.error{
+    font-size: 2rem;
+    color: red;
+}
+
+.result-container{
+    width: 80%;
+    max-width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.start-btn{
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 470px) {
+    .container {
+        max-width: 85%;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .result-container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .container {
+        max-width: 85%;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .result-container {
+        max-width: 90%;
+    }
+}
